@@ -4,9 +4,11 @@
 	<head>
         <meta charset="utf-8">
         <title> EXO </title>
-        <link href="layout.css" rel="stylesheet" type="text/css">
-				  <link rel="stylesheet" href="Style.css">
+      
+			  <link rel="stylesheet" href="Style.css">
         <link href="menu.css" rel="stylesheet" type="text/css">
+
+
 		<style type="text/css"></style>
 		</head>
     <body>
@@ -39,15 +41,28 @@
 
         </div>
 
+													<div class="slideshow">
+									<ul>
+									 <li><img src="image1.jpg" alt="" width="350" height="200" /></li>
+									 <li><img src="image2.jpg" alt="" width="350" height="200" /></li>
+									 <li><img src="image3.jpg" alt="" width="350" height="200" /></li>
+									 <li><img src="image4.jpg" alt="" width="350" height="200" /></li>
+									</ul>
+									</div>
 
-      <h1> diaporama </h1>
 
-			<ul classe='diaporama'>
-				    <li><img src="img/galerie/image1.jng" alt='image1' /></li>
-              <li><img src="img/galerie/image1.jng" alt='image1' /></li>
-             <li><img src="img/galerie/image1.jng" alt='image1' /></li>
-              <li><img src="img/galerie/image1.jng" alt='image1' /></li>
-    </ul>
+									<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+									<script type="text/javascript">
+									   $(function(){
+									      setInterval(function(){
+									         $(".slideshow ul").animate({marginLeft:-350},800,function(){
+									            $(this).css({marginLeft:0}).find("li:last").after($(this).find("li:first"));
+									         })
+									      }, 3500);
+									   });
+									</script>
+
 
 <footer>
 	   <p> otman1994@hotmail.fr </p>
