@@ -1,0 +1,33 @@
+.master div{
+float: left;
+border: 1px solid grey;
+background-color: #98B98B;
+margin: 15px 15px 15px 15px;
+width: 47%;
+height: 20%;
+}​
+
+.master h2{
+color: black;
+font-size: 30px;
+margin-left: 20px;
+}
+
+.master h3{
+float: right;
+color: white;
+font-size: 22px;
+text-transform: uppercase;
+position: relative;
+width: 49%;
+margin-top: -5px;
+}
+
+.master p{
+color: black;
+font-size: 19px;
+float: right;
+position: relative;
+width: 49%;
+margin-top: -10px;
+}
